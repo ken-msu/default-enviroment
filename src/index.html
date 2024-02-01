@@ -1,0 +1,63 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/app.css">
+  <title>Tailwind CSS Example</title>
+</head>
+    <body>
+
+        <header class="bg-blue-500 text-white py-4">
+          <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">My Website</h1>
+            <nav class="space-x-4">
+              <a href="#" class="text-white hover:underline">Home</a>
+              <a href="#" class="text-white hover:underline">About</a>
+              <a href="#" class="text-white hover:underline">Services</a>
+              <a href="#" class="text-white hover:underline">Contact</a>
+            </nav>
+          </div>
+        </header>
+      
+        <div class="container mx-auto my-8">
+          <h1 class="text-4xl font-bold mb-4">Hello, Tailwind CSS!</h1>
+          <p class="prose">
+            This is an example page using Tailwind CSS and the Tailwind Typography plugin.
+            You can customize the styles easily by editing the SCSS file.
+          </p>
+      
+    <!-- Custom buttons -->
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Primary Button
+      </button>
+      <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded">
+        Secondary Button
+      </button>
+          <!-- Responsive content -->
+          <div class="container hide-on-mobile">
+            <p class="prose">
+              This content is hidden on smaller screens due to the "hide-on-mobile" class.
+            </p>
+          </div>
+      
+          <!-- Additional content -->
+          <div class="my-8">
+            <h2 class="text-2xl font-bold mb-4">More Content</h2>
+            <p class="prose">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat justo nec erat aliquam, vel imperdiet ligula dignissim. Nullam in faucibus quam.
+            </p>
+          </div>
+        </div>
+      
+        <footer class="bg-gray-700 text-white py-4">
+          <div class="container mx-auto text-center">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+          </div>
+        </footer>
+      
+  <style src="./js/app.js" />
+</body>
+</html>

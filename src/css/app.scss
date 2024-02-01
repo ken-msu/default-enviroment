@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Custom styles go here */
+
+body {
+    @apply bg-gray-100 text-gray-800;
+  }
+  
+  .container {
+    @apply p-4;
+  
+    /* Responsive padding */
+    @screen md {
+      @apply lg:p-8;
+    }
+  }
+  
+  /* Responsive font size */
+  .title {
+    @apply text-2xl;
+  
+    @screen md {
+      @apply text-4xl;
+    }
+  }
+  
+  /* Hide on smaller screens */
+  .hide-on-mobile {
+    @screen sm {
+      @apply hidden;
+    }
+  }

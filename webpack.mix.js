@@ -3,6 +3,7 @@ const tailwindcss = require('tailwindcss');
 
 
 mix.setPublicPath('dist')
+    .copy('src/index.html', 'dist')
     .options({
         postCss: [ tailwindcss('./tailwind.config.js') ],
         processCssUrls: true,
