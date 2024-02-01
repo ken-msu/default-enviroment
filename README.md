@@ -35,17 +35,23 @@
      ```bash
      npm init -y
      ```
+3. **Install Laravel Mix / Or Another Bundler**
+    - Run the following command to install laravel-mix
+    ```bash
+        npm install laravel-mix --save-dev
+    ```
 
 3. **Install Tailwind CSS, Autoprefixer, and PostCSS:**
    - Run the following command to install Tailwind CSS, Autoprefixer, and PostCSS:
      ```bash
-     npm install tailwindcss autoprefixer postcss @tailwindcss/typography
+     npm install -D tailwindcss autoprefixer postcss
+     npm install -D @tailwindcss/typography
      ```
 
 4. **Create the Tailwind CSS configuration file:**
    - Run the following command to generate the initial configuration file:
      ```bash
-     npx tailwindcss init -p
+     npx tailwindcss init
      ```
 
 5. **Update `tailwind.config.js`:**
